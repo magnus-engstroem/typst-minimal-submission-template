@@ -8,8 +8,6 @@
   size: 11pt,
 )
 
-#set heading(numbering: "1.")
-
 #let title = "Exercise Submission"
 #let course = "COURSE101 — Course Name"
 #let student = "Name Namesson"
@@ -19,6 +17,8 @@
 ]
 
 #v(2cm)
+
+#set heading(numbering: none)
 
 #align(center)[
   #text(size: 24pt, weight: "bold")[#title]
