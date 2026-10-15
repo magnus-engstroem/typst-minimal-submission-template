@@ -20,6 +20,18 @@
 
 #set heading(numbering: none)
 
+#show: body => {
+  for elem in body.children {
+    if elem.func() == math.equation and elem.block {
+      let numbering = if "label" in elem.fields().keys() { "(1)" } else { none }
+      set math.equation(numbering: numbering)
+      elem
+    } else {
+      elem
+    }
+  }
+}
+
 #align(center)[
   #text(size: 24pt, weight: "bold")[#title]
 
