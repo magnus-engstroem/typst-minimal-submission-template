@@ -131,8 +131,8 @@ $<eq:tot_var>
 
 = Problem 2
 
-Solution here.
-
 == a)
+
+Solution here.
 
 #bibliography("sources.bib", style: "apa")
