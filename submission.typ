@@ -97,6 +97,13 @@
   depth: 2,
 )
 
+
+#v(1fr)
+
+#align(center)[
+  #datetime.today().display("[day] [month repr:long] [year]")
+]
+
 #pagebreak()
 
 = Problem 1
